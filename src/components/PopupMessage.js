@@ -36,22 +36,27 @@ function PopupMessage( props ) {
 		const messageInButton = event.target.innerHTML;
 
 		const buttonMessages = messagePopup.buttonMessage;
-		buttonMessages.map( ( message, index ) => {
-			switch ( message ) {
-				case 'Later':
-					return props.changePopup( null );
-				case 'Go on a break':
-					return props.changePopup( '2' );
-				case 'Leave work':
-					return props.changePopup( null );
-				case 'View your todo list':
-					return props.changePopup( '3' );
-				case 'Return to work':
-					return props.changePopup( null );
-				case 'OK':
-					return props.changePopup( '2' );
+
+		for( let i = 0; i < buttonMessages.length; i++ ) {
+			if ( messageInButton === buttonMessages[ i ] ) {
+				switch ( messageInButton ) {
+					case 'Later':
+						return props.changePopup( null );
+					case 'Go on a break':
+						return props.changePopup( '2' );
+					case 'Leave work':
+						return props.changePopup( null );
+					case 'View your todo list':
+						return props.changePopup( '3' );
+					case 'Return to work':
+						return props.changePopup( null );
+					case 'OK':
+						return props.changePopup( '2' );
+					default:
+						return;
+				}
 			}
-		})
+		}
 	}
 
 	function renderButton() {
