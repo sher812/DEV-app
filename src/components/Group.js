@@ -21,8 +21,9 @@ class Group extends React.Component {
                         </div>
                         <div className ="container">
 
-                        <button type="button" className="btn btn-secondary" >Add</button>
-                        <button type="button" className="btn btn-primary" >Remove</button>
+                        
+                        <button type="button" className="btn btn-secondary" >Remove</button>
+                        <button type="button" className="btn btn-primary" style={{ marginLeft: '10px' }}>Add</button>
                         </div>
                         
 					</div>
