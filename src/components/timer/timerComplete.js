@@ -29,6 +29,7 @@ class TimerComplete extends React.Component {
       <CountdownCircleTimer
           onComplete={() => {
             this.updateCount();
+            this.props.popup( '0' );
           }} 
         isPlaying = {true}
         duration={this.state.intervals[this.state.count % 2]}
