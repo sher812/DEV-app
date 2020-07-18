@@ -46,3 +46,19 @@
   border-color: black;
   padding: 8px;
 }
+
+/*moving the icon*/
+
+.appIcon {
+  position: absolute;
+  left: 100px;
+  bottom: 100px;
+}
+
+/*changing the size of the tab window*/
+
+.modal-content {
+  width: auto;
+  height: 40rem;
+  background-color: white;
+}
