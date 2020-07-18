@@ -1,5 +1,6 @@
 import React from "react";
 import Settings from "./Settings";
+import TimerComplete from './timer/timerComplete'
 
 class MainApplicationPage extends React.Component {
 	render() {
@@ -37,7 +38,7 @@ class MainApplicationPage extends React.Component {
 										<div className="tab-pane fade show active" id="v-pills-home" role="tabpanel"
 											 aria-labelledby="v-pills-home-tab">
 											{/*clock component*/}
-											put clock component here
+											<TimerComplete countdownTime = {6} count = {0} />
 										</div>
 										<div className="tab-pane fade" id="v-pills-profile" role="tabpanel"
 											 aria-labelledby="v-pills-profile-tab">...
