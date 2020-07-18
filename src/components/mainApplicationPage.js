@@ -1,6 +1,5 @@
 import React from "react";
 import Settings from "./Settings";
-<<<<<<< HEAD
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList"
 import useTodoState from "./useTodoState"
@@ -28,9 +27,6 @@ const TodoListWrapper = () => {
 
 }
 
-=======
-import TimerComplete from './timer/timerComplete'
->>>>>>> Rebase master
 
 class MainApplicationPage extends React.Component {
 
@@ -69,15 +65,7 @@ class MainApplicationPage extends React.Component {
 										<div className="tab-pane fade show active" id="v-pills-home" role="tabpanel"
 											aria-labelledby="v-pills-home-tab">
 											{/*clock component*/}
-<<<<<<< HEAD
-<<<<<<< HEAD
-											<TimerComplete countdownTime = {6} count = {0} popup = {this.props.changePopup}/>
-=======
-											<TimerComplete countdownTime = {6} count = {0} />
->>>>>>> Rebase master
-=======
 											<TimerComplete countdownTime = {6} count = {1} popup = {this.props.changePopup}/>
->>>>>>> Added start button
 										</div>
 										<div className="tab-pane fade" id="v-pills-profile" role="tabpanel"
 											aria-labelledby="v-pills-profile-tab">
