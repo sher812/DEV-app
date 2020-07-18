@@ -1,17 +1,17 @@
 import React from "react";
 
 class Breaktime extends React.Component {
+    state = {
+        break: "Whenever",
+        hours: "However long"
+    }
+    handleChange = (e) => {
+        e.preventDefault();
+        this.setState({
+            [e.target.id]: e.target.value
+        })
+    }
 	render() {
-        state = {
-            break: "Whenever",
-            hours: "However long"
-        }
-        handleChange = (e) => {
-            e.preventDefault();
-            this.setState({
-                [e.target.id]: e.target.value
-            })
-        }
 		return (
 			<form>
 				<h3>How often do you want to go on break?</h3>
