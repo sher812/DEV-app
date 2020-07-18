@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import MainApplicationPage from "./components/mainApplicationPage";
 import PopupMessage from "./components/PopupMessage";
-import TimerComplete from './components/timer/timerComplete'
 
 class App extends React.Component {
 
@@ -37,8 +36,6 @@ class App extends React.Component {
 
                 <MainApplicationPage
                     changePopup = { ( typeIndex ) => this.showPopup( typeIndex ) }/>
-
-                <TimerComplete countdownTimer = {60} count = {0} />
 
                 <PopupMessage
                     type={ this.state.popupType }
