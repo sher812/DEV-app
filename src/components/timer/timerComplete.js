@@ -1,6 +1,5 @@
 import React from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import TimerDigital from './timerDigital';
 
 import "./timerStyle.css";
 
@@ -26,11 +25,11 @@ class TimerComplete extends React.Component {
   }
 
   render() {
-      return <div className="timer-wrapper">
+    if (this.state.count % 2 === 0) {
+      return (<div className="timer-wrapper">
       <CountdownCircleTimer
           onComplete={() => {
             this.updateCount();
-            console.log("Here");
           }} 
         isPlaying = {true}
         duration={this.state.intervals[this.state.count % 2]}
@@ -38,8 +37,10 @@ class TimerComplete extends React.Component {
       >
       {renderTime}
       </CountdownCircleTimer>
-      </div>
-
+      </div>)
+    } else {
+      return <div />
+    }
   }
 }
 
