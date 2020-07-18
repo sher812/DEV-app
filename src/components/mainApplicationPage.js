@@ -34,7 +34,7 @@ class MainApplicationPage extends React.Component {
 			<div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog"
 				aria-labelledby="exampleModalLabel" aria-hidden="true">
 
-				<div className="modal-dialog" style={{ 'max-width': '90%' }}>
+			<div className="modal-dialog" style={{ maxWidth: '90%' }}>
 					<div className="modal-content">
 						<div className="modal-header">
 							<h5 className="modal-title">Manatu</h5>
