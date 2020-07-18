@@ -1,10 +1,60 @@
 import React from "react";
 
 class Breaktime extends React.Component {
+	render() {
+        state = {
+            break: "Whenever",
+            hours: "However long"
+        }
+        handleChange = (e) => {
+            e.preventDefault();
+            this.setState({
+                [e.target.id]: e.target.value
+            })
+        }
+		return (
+			<form>
+				<h3>How often do you want to go on break?</h3>
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						{this.state.break}
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" onChange = {this.handleChange}>
+						<a class="dropdown-item" id = "Every 60 minutes">Every 60 minutes</a>
+						<a class="dropdown-item" id = "Every 70 minutes">Every 70 minutes</a>
+						<a class="dropdown-item" id = "Every 80 minutes">Every 80 minutes</a>
+						<a class="dropdown-item" id = "Every 90 minutes">Every 90 minutes</a>
+						<a class="dropdown-item" id = "Every 100 minutes">Every 100 minutes</a>
+						<a class="dropdown-item" id = "Every 110 minutes">Every 110 minutes</a>
+						<a class="dropdown-item" id ="Every 120 minutes">Every 120 minutes</a>
+					</div>
+				</div>
+				<h3>Up to how long do you wish to work per day in total?</h3>
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						{this.state.hours}
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" onChange = {this.handleChange}>
+						<a class="dropdown-item" id = "7 hours">7 hours</a>
+						<a class="dropdown-item" id ="8 hours">8 hours</a>
+						<a class="dropdown-item" id = "9 hours">9 hours</a>
+						<a class="dropdown-item" id = "10 hours">10 hours</a>
+						<a class="dropdown-item" id = "11 hours">11 hours</a>
+						<a class="dropdown-item" id = "12 hours">12 hours</a>
+					</div>
+				</div>
+			</form>
+
+		);
+	}
+} */
+
+/* class Breaktime extends React.Component {
     state = {
         break: "Whenever",
         hours: "However long"
     }
+
 	render() {
 		return (
 			<form>
@@ -38,7 +88,7 @@ class Breaktime extends React.Component {
 
 		);
 	}
-}
+} */
 
 /* class Breaktime extends React.Component {
 	render() {
