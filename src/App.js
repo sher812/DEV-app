@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import MainApplicationPage from "./components/mainApplicationPage";
-<<<<<<< HEAD
 import PopupMessage from "./components/PopupMessage";
+import TimerComplete from './components/timer/timerComplete'
 
 class App extends React.Component {
 
@@ -38,6 +38,8 @@ class App extends React.Component {
                 <MainApplicationPage
                     changePopup = { ( typeIndex ) => this.showPopup( typeIndex ) }/>
 
+                <TimerComplete countdownTimer = {60} count = {0} />
+
                 <PopupMessage
                     type={ this.state.popupType }
                     changePopup={ ( typeIndex ) => this.showPopup( typeIndex ) }
@@ -46,41 +48,6 @@ class App extends React.Component {
         );
     }
 
-=======
-import './components/timer/timerComplete';
-import TimerComplete from './components/timer/timerComplete';
-
-import './components/timer/timerDigital';
-import TimerDigital from './components/timer/timerDigital';
-import TimeC from './components/timer/timerFormated';
-
-const toggle = ({}) => {
-  console.log("H");
-  return <TimerComplete countdownTime = {6} count = {1} />
-}
-
-function App() {
-  return (
-      <div className="App">
-          <div className="App-body">
-              <button type="button" className="appIcon btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                  <i className="fas fa-hourglass fa-2x"/>
-              </button>
-
-              <TimerComplete countdownTime = {6} count = {0} />
-              {/* <TimerDigital countdownTime = {60}/> */}
-
-              {/* <TimeC /> */}
-
-              <button onClick= {toggle}>
-                <h1> HI </h1>
-              </button>
-          </div>
-
-          <MainApplicationPage />
-    </div>
-  );
->>>>>>> Button to change state
 }
 
 export default App;
