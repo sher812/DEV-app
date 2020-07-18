@@ -1,6 +1,8 @@
 import * as React from "react";
 import Profile from "./profile";
 import Group from "./Group";
+import Breaktime from './Breaktime';
+
 
 class Settings extends React.Component {
 	render() {
@@ -22,7 +24,8 @@ class Settings extends React.Component {
 						 aria-labelledby="nav-home-tab">
 						<Profile />
 					</div>
-					<div className="tab-pane fade" id="nav-breakTime" role="tabpanel" aria-labelledby="nav-breakTime-tab">break time
+					<div className="tab-pane fade" id="nav-breakTime" role="tabpanel" aria-labelledby="nav-breakTime-tab">
+						<Breaktime />
 					</div>
 					<div className="tab-pane fade" id="nav-group" role="tabpanel" aria-labelledby="nav-group-tab">
 						<Group />
