@@ -47,7 +47,7 @@ class Breaktime extends React.Component {
 
 		);
 	}
-} */
+} 
 
 /* class Breaktime extends React.Component {
     state = {
