@@ -24,7 +24,7 @@ function App() {
           <div className="appIcon" >
               <i className="fas fa-hourglass fa-2x"/>
           </div>
-          <TimerCircle />
+          <TimerCircle countdownTime = />
       </div>
     </div>
   );
