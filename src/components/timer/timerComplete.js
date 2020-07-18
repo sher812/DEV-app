@@ -4,23 +4,51 @@ import TimerDigital from './timerDigital';
 
 import "./timerStyle.css";
 
+
 class TimerComplete extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {countdownTime: this.props.countdownTime};
+    this.state = {countdownTime: this.props.countdownTime, count: 0, intervals: [5,2,5]};
   }
 
+  updateCount() {
+    this.setState((prevState, props) => {
+      return { count: prevState.count + 1 }
+    });
+  }
+
+
   render() {
-    return <div className="timer-wrapper">
-    <CountdownCircleTimer
-      isPlaying
-      duration={this.state.countdownTime}
-      colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
-      onComplete={() => [true, 1000]}
-    >
-    </CountdownCircleTimer>
-  </div>
+    if(this.state.count % 2 == 0) {
+      return <div className="timer-wrapper">
+      <CountdownCircleTimer
+          onComplete={() => {
+            // do your stuff here
+            this.updateCount();
+          }} 
+        isPlaying = {true}
+        duration={this.state.intervals[this.state.count % 2]}
+        colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
+      >
+      <h1> A </h1>
+      </CountdownCircleTimer>
+      </div>
+    } else {
+      return <CountdownCircleTimer
+         onComplete={() => {
+        // do your stuff here
+        this.updateCount();
+        return [true, 0] // repeat animation in 1.5 seconds
+         }} 
+         isPlaying = {true}
+        duration={this.state.intervals[this.state.count % 2]}
+        colors={[["#000000"]]}
+  >
+  <h1> B </h1>
+  </CountdownCircleTimer>
+      
+    }
   }
 }
 
