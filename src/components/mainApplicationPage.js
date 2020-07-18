@@ -65,7 +65,7 @@ class MainApplicationPage extends React.Component {
 										<div className="tab-pane fade show active" id="v-pills-home" role="tabpanel"
 											aria-labelledby="v-pills-home-tab">
 											{/*clock component*/}
-											<TimerComplete countdownTime = {6} count = {0} popup = {this.props.changePopup}/>
+											<TimerComplete countdownTime = {6} count = {1} popup = {this.props.changePopup}/>
 										</div>
 										<div className="tab-pane fade" id="v-pills-profile" role="tabpanel"
 											aria-labelledby="v-pills-profile-tab">
