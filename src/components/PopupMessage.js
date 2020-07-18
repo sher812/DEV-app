@@ -25,7 +25,7 @@ function PopupMessage( props ) {
 		{
 			type: 'todoList',
 			title: null,
-			body: [ 'Drink water', 'Take a walk', 'Get some fresh air', 'Take a nap' ],
+			body: [ 'Drink water', 'Take a walk' ],
 			buttonMessage: [ 'OK' ]
 		},
 	];
