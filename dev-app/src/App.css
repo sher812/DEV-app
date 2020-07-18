@@ -13,8 +13,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App-body {
+  background-image: url("desktopImage.png") ;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.fa-hourglass {
+  color: black;
+}
+
+.appIcon {
+  border-style: solid;
+  border-color: black;
+  padding: 8px;
 }
