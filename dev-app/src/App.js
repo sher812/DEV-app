@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './components/timer';
-import MyComponent from './components/timer';
+//import './components/timer/timer';
+import TimerCircle from './components/timer/timerCircle';
+import TimerDig from './components/timer/timerDig';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
           <div className="appIcon" >
               <i className="fas fa-hourglass fa-2x"/>
           </div>
+          <TimerDig />
+          <TimerCircle />
       </div>
     </div>
   );
