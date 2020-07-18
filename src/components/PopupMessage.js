@@ -99,7 +99,7 @@ function PopupMessage( props ) {
 	}
 
 	return (
-		<div id="popupMessageBox" className="modal">
+		<div id="popupMessageBox" className="modal" style={{ right: 0, left: '72%' }}>
 
 			<div  id={'popupMessageContent'} className="modal-content">
 				{ renderTitle() }
