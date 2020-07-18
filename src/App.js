@@ -35,7 +35,8 @@ class App extends React.Component {
                     </button>
                 </div>
 
-                <MainApplicationPage />
+                <MainApplicationPage
+                    changePopup = { ( typeIndex ) => this.showPopup( typeIndex ) }/>
 
                 <PopupMessage
                     type={ this.state.popupType }
