@@ -10,7 +10,7 @@ class Group extends React.Component {
                 <div className="tab-content" id="nav-tabContent">
 					<div className="tab-pane fade show active" id="nav-group" role="tabpanel"
 						 aria-labelledby="nav-home-tab">
-                        <img src={Profilepic} alt="profile picture" className = "profilepic" />
+                        <img src={Profilepic} alt="profile" className = "profilepic" />
                         <div className="settingText">
                         <text>Members: {"\n"}</text> <br/>
                         <text> <span className="tab">Jane</span>    Total points:xxxx</text> <br/>

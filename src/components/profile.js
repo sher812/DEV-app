@@ -13,7 +13,7 @@ class profile extends React.Component {
 				<div className="tab-content" id="nav-tabContent">
 					<div className="tab-pane fade show active" id="nav-profile" role="tabpanel"
 						 aria-labelledby="nav-home-tab">
-                        <img src={Profilepic} alt="profile picture" className = "profilepic" />
+                        <img src={Profilepic} alt="profile" className = "profilepic" />
                         <div className ="settingText">
                         <text>
                           Name: xxxxx {"\n"}
