@@ -1,4 +1,5 @@
 import React from "react";
+import Settings from "./Settings";
 
 class MainApplicationPage extends React.Component {
 	render() {
@@ -7,10 +8,10 @@ class MainApplicationPage extends React.Component {
 			<div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog"
 				 aria-labelledby="exampleModalLabel" aria-hidden="true">
 
-			<div className="modal-dialog">
+			<div className="modal-dialog" style={{ 'max-width': '90%' }}>
 					<div className="modal-content">
 						<div className="modal-header">
-							<h5 className="modal-title">Modal title</h5>
+							<h5 className="modal-title">Manatu</h5>
 							<button type="button" className="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
@@ -25,28 +26,25 @@ class MainApplicationPage extends React.Component {
 										   aria-selected="true">Home</a>
 										<a className="nav-link" id="v-pills-profile-tab" data-toggle="pill"
 										   href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-										   aria-selected="false">Profile</a>
+										   aria-selected="false">To do</a>
 										<a className="nav-link" id="v-pills-messages-tab" data-toggle="pill"
 										   href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-										   aria-selected="false">Messages</a>
-										<a className="nav-link" id="v-pills-settings-tab" data-toggle="pill"
-										   href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
 										   aria-selected="false">Settings</a>
 									</div>
 								</div>
 								<div className="col-9">
 									<div className="tab-content" id="v-pills-tabContent">
 										<div className="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-											 aria-labelledby="v-pills-home-tab">...
+											 aria-labelledby="v-pills-home-tab">
+											{/*clock component*/}
+											put clock component here
 										</div>
 										<div className="tab-pane fade" id="v-pills-profile" role="tabpanel"
 											 aria-labelledby="v-pills-profile-tab">...
 										</div>
 										<div className="tab-pane fade" id="v-pills-messages" role="tabpanel"
-											 aria-labelledby="v-pills-messages-tab">...
-										</div>
-										<div className="tab-pane fade" id="v-pills-settings" role="tabpanel"
-											 aria-labelledby="v-pills-settings-tab">...
+											 aria-labelledby="v-pills-messages-tab">
+											<Settings />
 										</div>
 									</div>
 								</div>
