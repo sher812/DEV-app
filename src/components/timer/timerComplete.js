@@ -25,7 +25,6 @@ class TimerComplete extends React.Component {
   }
 
   render() {
-    if (this.state.count % 2 === 0) {
       return (<div className="timer-wrapper">
       <CountdownCircleTimer
           onComplete={() => {
@@ -38,9 +37,6 @@ class TimerComplete extends React.Component {
       {renderTime}
       </CountdownCircleTimer>
       </div>)
-    } else {
-      return <div />
-    }
   }
 }
 
