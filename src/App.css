@@ -88,5 +88,17 @@
   flex: auto;
 }
 
+.title1 {
+  text-align: left;
+  padding-top: 8px;
+
+}
+
+
+
 /*editing text in Break Time*/
+
+.btnBrk {
+  padding: 10px;
+}
 
