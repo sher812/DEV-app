@@ -16,7 +16,7 @@ const TodoForm = ({ saveTodo }) => {
     >
       <TextField
         variant="outlined"
-        placeholder="Add todo"
+        placeholder="Add to-dos"
         margin="normal"
         onChange={onChange}
         value={value}
