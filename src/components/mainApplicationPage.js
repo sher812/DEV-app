@@ -9,8 +9,8 @@ const TodoListWrapper = () => {
 	const { todos, addTodo, deleteTodo } = useTodoState([]);
 
 	return (
-		<><h1 component="h1" variant="h2">
-			Todos
+		<><h1 className = "todoText" component="h1" variant="h2">
+			To-dos
   </h1>
 
 			<TodoForm
